@@ -174,8 +174,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " end coc stuff
 
-:let g:NERDTreeWinSize=60
-
 function! <SID>GDScriptFormat()
     let l = line(".")
     let c = col(".")
@@ -241,3 +239,5 @@ let g:snipMate = { 'snippet_version' : 1  }
 
 " prevent NERD tree from loading at start
 let g:NERDTreeHijackNetrw=0
+
+let g:NERDTreeWinSize=42
