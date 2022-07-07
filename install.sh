@@ -26,7 +26,7 @@ then
 fi
 
 # font install
-brew install --cask font-fira-code-nerd-font font-fira-mono-nerd-font
+# brew install --cask font-fira-code-nerd-font font-fira-mono-nerd-font
 
 ln -s -F ~/.vim_runtime/.alacritty.yml ~/.alacritty.yml
 ln -s -F ~/.vim_runtime/crt.theme.json ~/crt.theme.json

@@ -87,8 +87,8 @@ nnoremap &lt;silent&gt; ]q :cnext&lt;CR&gt;</code>
 
 " " Godot fold attempts
 
-setlocal foldlevel=0
-autocmd Filetype gdscript AnyFoldActivate 
+" setlocal foldlevel=0
+" autocmd Filetype gdscript AnyFoldActivate 
 " 
 " func! GodotSettings() abort
 "     setlocal foldmethod=expr
@@ -174,14 +174,14 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " end coc stuff
 
-function! <SID>GDScriptFormat()
-    let l = line(".")
-    let c = col(".")
-    :%! gdformat -
-    call cursor(l, c)
-endfunction
+" function! <SID>GDScriptFormat()
+"     let l = line(".")
+"     let c = col(".")
+"     :%! gdformat -
+"     call cursor(l, c)
+" endfunction
 
-autocmd BufWritePre *.gd :call <SID>GDScriptFormat()
+" autocmd BufWritePre *.gd :call <SID>GDScriptFormat()
 
 set number
 
