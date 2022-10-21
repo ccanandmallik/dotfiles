@@ -52,6 +52,12 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
+
+" buffer swaps
+
+map gb :bn<cr>
+map gB :bp<cr>
+
 call plug#end()
 
 " ctrl p settings
@@ -83,7 +89,8 @@ nnoremap &lt;Leader&gt;/ :Ack!&lt;Space&gt;
 nnoremap &lt;silent&gt; [q :cprevious&lt;CR&gt;
 nnoremap &lt;silent&gt; ]q :cnext&lt;CR&gt;</code>
 
-
+set shiftwidth=2
+set tabstop=2
 
 " " Godot fold attempts
 
