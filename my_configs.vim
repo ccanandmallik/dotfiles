@@ -248,3 +248,7 @@ let g:snipMate = { 'snippet_version' : 1  }
 let g:NERDTreeHijackNetrw=0
 
 let g:NERDTreeWinSize=42
+
+
+" sets highlight colors for fun
+highlight Folded ctermbg=blue ctermfg=211
