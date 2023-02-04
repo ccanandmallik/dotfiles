@@ -194,7 +194,7 @@ set number
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'deus',
+      \ 'colorscheme': 'Tomorrow_Night_Blue',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
