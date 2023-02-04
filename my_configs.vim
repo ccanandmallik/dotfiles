@@ -252,4 +252,9 @@ let g:NERDTreeWinSize=42
 
 " sets highlight colors for fun
 highlight Folded ctermbg=blue ctermfg=211
-highlight Normal ctermbg=black
+
+if has('win32')
+  highlight Normal ctermbg=black
+else
+  highlight Normal ctermbg=1576
+endif
