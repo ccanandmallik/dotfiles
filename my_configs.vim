@@ -250,22 +250,10 @@ let g:NERDTreeHijackNetrw=0
 let g:NERDTreeWinSize=42
 
 
-" check for WSL
-function! IsWSL()
-  if has("unix")
-    let lines = readfile("/proc/version")
-    if lines[0] =~ "Microsoft"
-      return 1
-    endif
-  endif
-  return 0
-endfunction
-
-
 " sets highlight colors for fun
 highlight Folded ctermbg=blue ctermfg=211
-if IsWSL()
-  highlight Normal ctermbg=black
-else
+if has('macunix')
   highlight Normal ctermbg=1576
+else
+  highlight Normal ctermbg=black
 endif
