@@ -4,8 +4,6 @@
 #
 # Imports are loaded in order, skipping all missing files, with the importing
 # file being loaded last. If a field is already present in a previous import, it
-# will be replaced.
-#
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 #import:
@@ -394,7 +392,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+# background_opacity: 1.0
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -470,7 +468,8 @@ colors:
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-#mouse:
+mouse:
+  enabled: true
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
