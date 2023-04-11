@@ -48,6 +48,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'mileszs/ack.vim'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'itchyny/calendar.vim'
+Plug 'hashivim/vim-terraform'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -63,7 +64,7 @@ call plug#end()
 " ctrl p settings
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|omgd\|omgdtmp'
+let g:ctrlp_custom_ignore = 'node_modules\|\.DS_Store\|\.git\|\.omgd\|\.omgdtmp'
 
 
 " Use ripgrep for searching ⚡️
@@ -132,11 +133,11 @@ highlight CocFloating ctermbg=black ctermfg=magenta
 " other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ Check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-function! s:check_back_space() abort
+function! Check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
